@@ -1,4 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import {Injectable, Logger, Post} from '@nestjs/common';
 
 @Injectable()
-export class UserService {}
+export class UserService {
+    constructor(private readonly logger: Logger) {
+    }
+
+    @Post('signup')
+    async signUp() {
+
+    }
+}

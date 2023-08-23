@@ -6,4 +6,10 @@ export class PlaceOutput {
 
     @ApiProperty()
     number: string;
+
+    @ApiProperty()
+    status: string;
+
+    @ApiProperty()
+    type: string;
 }
