@@ -1,12 +1,9 @@
-import {Injectable, Logger, Post} from '@nestjs/common';
+import { Injectable, Post } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
-    constructor(private readonly logger: Logger) {
-    }
+  constructor() {}
 
-    @Post('signup')
-    async signUp() {
-
-    }
+  @Post('signup')
+  async signUp() {}
 }
